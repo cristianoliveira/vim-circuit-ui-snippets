@@ -1,10 +1,6 @@
-# Vim React Html Snippets
+# Vim Circuit-ui Snippets
 
-A Vim snippet library for html when creating React components.
-This plugin only provides the html(jsx) snippets it works well as a complement
-of others snippets like:
-
-https://github.com/epilande/vim-react-snippets
+A Vim snippet library for [circuit-ui]([https://github.com/sumup/circuit-ui)
 
 Requires [UltiSnips](https://github.com/SirVer/ultisnips).
 
@@ -14,7 +10,7 @@ Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
 " React code snippets
-Plug 'cristianoliveira/vim-react-html-snippets'
+Plug 'cristianoliveira/vim-circuit-ui-snippets'
 
 " Ultisnips
 Plug 'SirVer/ultisnips'
@@ -25,28 +21,46 @@ Plug 'SirVer/ultisnips'
 
 ## Usage
 
-As any other   -  you use specific codes for autocompletion. For this library
+As any other - you use specific codes for autocompletion. For this library
 it is basic the html tag name.
 
-#### Skeleton
+### Common snippets
 
-  - `<> "- Place a custom tag and cursors"`
-  - `div "- Place a plain div"`
-  - `divc "- Place a div using className"`
-  - `div# "- Place a div with ID & className"`
-  - `div. "- Place a div with className"`
-  - `a "- Place a link and cursor for href"`
-  - `img "- Place a img and cursor for src"`
-  - `li "- Place a list"`
-  - `ol "- Place a ol"`
-  - `dl "- Place a dl"`
-  - `p "- Place a paragraph"`
-  - `select "- Place a Select Box"`
-  - `strong "- Place a <strong>"`
-  - `table "- Place a HTML <table>"`
-  - `span "- Place a <span>"`
-  - `span# "- Place a <span> with ID & className"`
-  - `span. "- Place a <span> with className"`
+* `cimp "Circuit-ui import components" w`
 
-### Properties
-  - `cn "- Place a className"`
+#### Theme
+
+* `cts "Circui-ui theme spacings"`
+* `ctg "Circui-ui theme grid"`
+* `ctc "Circui-ui theme colors"`
+* `ctis "Circui-ui theme icon sizes"`
+* `ctt "Circui-ui theme typography"`
+* `ctth "Circui-ui theme typography for headings"`
+* `cttsh "Circui-ui theme typography for subHeadings"`
+* `cttt "Circui-ui theme typography for text"`
+* `ctmq "Circui-ui theme media query"`
+
+#### Measurement
+
+* `cmb "Circui-ui measurement byte"`
+* `cmk "Circui-ui measurement kilo"`
+* `cmg "Circui-ui measurement giga"`
+* `cmt "circui-ui measurement tera"`
+
+#### Complex component usage
+
+* `cbc "circui-ui button component "`
+* `ccc "circui-ui card component"`
+
+## Contributing
+
+* Fork it!
+* Create your feature branch: `git checkout -b my-new-feature`
+* Commit your changes: `git commit -am 'Add some feature'`
+* Push to the branch: `git push origin my-new-feature`
+* Submit a pull request, they are welcome!
+* Please include unit tests in your pull requests
+
+# License
+
+MIT
