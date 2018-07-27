@@ -1,0 +1,118 @@
+snippet cimp "Circuit-ui import components" w
+import {${1:}} from 'circuit-ui';
+endsnippet
+
+#Theme
+snippet cts "Circui-ui theme spacings" w
+${theme.spacings.${1:}}
+endsnippet
+
+snippet ctg "Circui-ui theme grid" w
+${theme.grid.${1:}}
+endsnippet
+
+snippet ctc "Circui-ui theme colors" w
+${theme.colors.${1:}}
+endsnippet
+
+snippet ctic "Circui-ui theme icon sizes" w
+${theme.iconSizes.${1:}}
+endsnippet
+
+snippet ctbr "Circui-ui theme border radius" w
+${theme.borderRadius.${1:}}
+endsnippet
+
+snippet ctt "Circui-ui theme typography" w
+${theme.typography.${1:}}
+endsnippet
+
+snippet ctth "Circui-ui theme typography for headings" w
+${theme.typography.headings.${1:}}
+endsnippet
+
+snippet cttsh "Circui-ui theme typography for subHeadings" w
+${theme.typography.subHeadings.${1:}}
+endsnippet
+
+snippet cttt "Circui-ui theme typography for text" w
+${theme.typography.text.${1:}}
+endsnippet
+
+snippet ctmq "Circui-ui theme media query" w
+${theme.mq.${1:}}
+endsnippet
+
+# Mesurements
+snippet cmb "Circui-ui measurement byte" w
+byte
+endsnippet
+
+snippet cmk "Circui-ui measurement kilo" w
+kilo
+endsnippet
+
+snippet cmg "Circui-ui measurement giga" w
+giga
+endsnippet
+
+snippet cmt "circui-ui measurement tera" w
+tera
+endsnippet
+
+# Button Group
+snippet cbgc "circui-ui button component " w
+<ButtonGroup>
+	<Button>
+		${1:}
+	</Button>
+</ButtonGroup>
+endsnippet
+
+# Card
+snippet ccc "circui-ui card component" w
+<Card>
+	<CardHeader onClose={action("CloseButton clicked")}>
+		<Heading size={Heading.KILO} noMargin>
+			Card heading
+		</Heading>
+	</CardHeader>
+	<Text margin={false}>This is some text showing in my card</Text>
+	<CardFooter>
+		<ButtonGroup>
+			<Button secondary>Cancel</Button>
+			<Button>Confirm</Button>
+		</ButtonGroup>
+	</CardFooter>
+</Card>
+endsnippet
+
+# Calendar Range Picker
+snippet ccrpc "circui-ui calendar range picker component" w
+<RangePicker
+	startDate={startDate}
+	startDateId="your_unique_start_date_id"
+	endDate={endDate}
+	endDateId="your_unique_end_date_id"
+	onDatesChange={onDatesChange}
+	focusedInput={focusedInput}
+	onFocusChange={onFocusChange}
+	showClearDates
+/>
+endsnippet
+
+# List
+snippet clc "circui-ui list component" w
+<List size={select("Size", sizes, sizes[0])} ordered={boolean("Ordered")}>
+	<li>This is a list</li>
+	<li>A very fine list</li>
+	<List
+	size={select("Size", sizes, sizes[0])}
+	ordered={boolean("Ordered")}
+	>
+		<li>Sometimes a nested list</li>
+	</List>
+	<li>The kind of list you like</li>
+</List>
+endsnippet
+
