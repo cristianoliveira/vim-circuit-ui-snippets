@@ -116,3 +116,14 @@ snippet clc "circui-ui list component" w
 </List>
 endsnippet
 
+snippet impe "Import emotion-js with default imports" w
+import styled, { css } from 'react-emotion';
+endsnippet
+
+snippet cstc "Create styled component" w
+const StyledComponent = styled('div')(
+({ theme }) => css\`
+	width: 100%;
+\`
+);
+endsnippet
